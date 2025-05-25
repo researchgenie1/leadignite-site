@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LeadIgnite AI - Realtor Lead Generation</title>
   <style>
     body {
@@ -13,7 +13,7 @@
       color: #333;
     }
     header {
-      background-color: #1a1a1a;
+      background-color: #111;
       color: #fff;
       padding: 40px 20px;
       text-align: center;
@@ -26,23 +26,48 @@
       font-size: 1.2em;
       margin-top: 10px;
     }
+    #datetime {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ccc;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
     section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-    .plans, .how-it-works {
+    .plans, .how-it-works, .dashboard, .form-section, .login {
       background-color: #fff;
       border-radius: 10px;
       padding: 30px;
       margin: 20px 0;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    .plans h2, .how-it-works h2 {
+    .plans h2, .how-it-works h2, .dashboard h2, .form-section h2, .login h2 {
       margin-top: 0;
     }
     .plan {
       margin-bottom: 20px;
+    }
+    .plan a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
     }
     .cta {
       text-align: center;
@@ -54,6 +79,43 @@
     .cta a {
       color: white;
       text-decoration: underline;
+    }
+    .zip-search {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .zip-search input {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .zip-search button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
     footer {
       text-align: center;
@@ -67,9 +129,25 @@
   <header>
     <h1>LeadIgnite AI</h1>
     <p>AI-Powered Leads for Realtors — Book More Clients Without Lifting a Finger</p>
+    <div id="datetime"></div>
   </header>
 
-  <section class="features">
+  <nav>
+    <a href="#features">Why Us</a>
+    <a href="#plans">Pricing</a>
+    <a href="#how">How It Works</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#login">Login</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="zip-search">
+    <h2>Find Leads in Your Area</h2>
+    <input type="text" placeholder="Enter Zip Code" id="zipInput" />
+    <button onclick="alert('Lead search coming soon. Zip: ' + document.getElementById('zipInput').value)">Search</button>
+  </section>
+
+  <section id="features" class="features">
     <h2>Why Realtors Love LeadIgnite AI</h2>
     <ul>
       <li>Exclusive leads for your zip code — not shared</li>
@@ -79,39 +157,81 @@
     </ul>
   </section>
 
-  <section class="plans">
+  <section id="plans" class="plans">
     <h2>Packages & Pricing</h2>
     <div class="plan">
-            <h3>Starter - $500/month</h3>
+      <h3>Starter - $500/month</h3>
       <p>100 fresh leads, 3 AI-written follow-up emails</p>
+      <a href="https://buy.stripe.com/test_7sIcNp1hn8iS2pW9AA">Choose Starter</a>
     </div>
     <div class="plan">
       <h3>Growth - $1,200/month</h3>
       <p>250 leads, email automation, CRM setup</p>
+      <a href="https://buy.stripe.com/test_00g7uB7e59MC5sQ3cc">Choose Growth</a>
     </div>
     <div class="plan">
       <h3>Dominate - $2,000/month</h3>
       <p>Everything + Google Ads + landing funnel</p>
+      <a href="https://buy.stripe.com/test_dR6bKVeWffBq7YAcMN">Choose Dominate</a>
     </div>
   </section>
 
-  <section class="how-it-works">
+  <section id="how" class="how-it-works">
     <h2>How It Works</h2>
     <ol>
-      <li>Tell us your target zip code</li>
+      <li>Enter your target zip code</li>
       <li>We find and qualify the leads</li>
       <li>We write & send your outreach messages</li>
       <li>You book meetings, close clients</li>
     </ol>
   </section>
 
-  <section class="cta">
+  <section id="dashboard" class="dashboard">
+    <h2>Customer Dashboard</h2>
+    <p>This dashboard will soon allow you to track:</p>
+    <ul>
+      <li>Lead delivery status</li>
+      <li>Response metrics</li>
+      <li>Subscription activity</li>
+      <li>Downloadable reports</li>
+    </ul>
+    <p>Email <a href="mailto:jpinter@researchgenie.net">jpinter@researchgenie.net</a> for preview access.</p>
+  </section>
+
+  <section id="login" class="login">
+    <h2>Client Login (Coming Soon)</h2>
+    <p>A secure login portal will be available for clients to manage services and access leads. Stay tuned.</p>
+  </section>
+
+  <section class="form-section">
+    <h2>Schedule a Call or Submit a Custom Request</h2>
+    <form action="https://formspree.io/f/mayvlzpn" method="POST">
+      <label>Full Name:</label>
+      <input type="text" name="name" required />
+
+      <label>Email Address:</label>
+      <input type="email" name="email" required />
+
+      <label>Message or Questions:</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact" class="cta">
     <h2>Get 20 Free Sample Leads — No Credit Card Needed</h2>
-    <p><a href="mailto:markpinter2000@gmail.com?subject=Free Sample Leads Request">Email us to claim your free leads</a></p>
+    <p>Email <a href="mailto:jpinter@researchgenie.net">jpinter@researchgenie.net</a> or call <a href="tel:9172278617">917-227-8617</a> to claim your free leads today.</p>
   </section>
 
   <footer>
     &copy; 2025 LeadIgnite AI. Powered by ResearchGenie.
   </footer>
+
+  <script>
+    const now = new Date();
+    const formatted = now.toLocaleString();
+    document.getElementById('datetime').textContent = 'Current Time: ' + formatted;
+  </script>
 </body>
 </html>
