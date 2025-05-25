@@ -3,132 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LeadIgnite AI - Realtor Lead Generation</title>
+  <title>LeadIgnite AI - Exclusive Off-Market Leads</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background: linear-gradient(to right, #f1f4f9, #dff0f7);
+      color: #222;
     }
     header {
-      background-color: #111;
+      background: linear-gradient(to right, #003366, #0059b3);
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+      font-weight: bold;
     }
     header p {
       font-size: 1.2em;
       margin-top: 10px;
+      font-weight: 300;
     }
     #datetime {
       margin-top: 10px;
-      font-size: 1em;
-      color: #ccc;
+      font-size: 0.95em;
+      color: #ddd;
     }
     nav {
-      background-color: #333;
-      padding: 10px;
+      background-color: #004080;
+      padding: 15px;
       text-align: center;
     }
     nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      font-size: 1.1em;
     }
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 50px 25px;
+      max-width: 1000px;
       margin: auto;
+      text-align: center;
     }
-    .plans, .how-it-works, .dashboard, .form-section, .login {
+    section h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    .plans, .how-it-works, .dashboard, .form-section, .login, .features {
       background-color: #fff;
-      border-radius: 10px;
-      padding: 30px;
-      margin: 20px 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .plans h2, .how-it-works h2, .dashboard h2, .form-section h2, .login h2 {
-      margin-top: 0;
+      border-radius: 12px;
+      padding: 40px;
+      margin: 30px auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
     .plan {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .plan h3 {
+      color: #007acc;
     }
     .plan a {
       display: inline-block;
       margin-top: 10px;
-      background-color: #007bff;
+      background-color: #007acc;
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 12px 25px;
+      border-radius: 30px;
       text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .plan a:hover {
+      background-color: #005c99;
     }
     .cta {
-      text-align: center;
-      background-color: #007bff;
+      background-color: #007acc;
       color: white;
-      padding: 30px 20px;
-      border-radius: 10px;
+      padding: 50px 25px;
+      border-radius: 12px;
+      margin-top: 40px;
     }
     .cta a {
-      color: white;
+      color: #fff;
+      font-weight: bold;
       text-decoration: underline;
     }
-    .zip-search {
-      text-align: center;
-      margin: 40px 0;
-    }
     .zip-search input {
-      padding: 10px;
-      width: 200px;
+      padding: 12px;
+      width: 220px;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 25px;
+      margin-right: 10px;
     }
     .zip-search button {
-      padding: 10px 20px;
-      background-color: #007bff;
+      padding: 12px 20px;
+      background-color: #007acc;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 25px;
       cursor: pointer;
     }
     form label {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      text-align: left;
     }
     form input, form textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 8px;
     }
     form button {
-      background-color: #007bff;
+      background-color: #007acc;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 30px;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       cursor: pointer;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      background-color: #f1f1f1;
       font-size: 0.9em;
-      color: #666;
+      color: #555;
+    }
+    ul, ol {
+      text-align: left;
+      max-width: 700px;
+      margin: 20px auto;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>LeadIgnite AI</h1>
-    <p>AI-Powered Leads for Realtors — Book More Clients Without Lifting a Finger</p>
+    <p>Unlimited Off-Market Leads. Real-Time Intelligence. Realtor-Centric.</p>
     <div id="datetime"></div>
   </header>
 
@@ -142,7 +159,7 @@
   </nav>
 
   <section class="zip-search">
-    <h2>Find Leads in Your Area</h2>
+    <h2>Search Your Territory</h2>
     <input type="text" placeholder="Enter Zip Code" id="zipInput" />
     <button onclick="alert('Lead search coming soon. Zip: ' + document.getElementById('zipInput').value)">Search</button>
   </section>
@@ -150,10 +167,10 @@
   <section id="features" class="features">
     <h2>Why Realtors Love LeadIgnite AI</h2>
     <ul>
-      <li>Exclusive leads for your zip code — not shared</li>
-      <li>AI-powered outreach that converts</li>
-      <li>Start seeing results in 7 days</li>
-      <li>No cold calling, no chasing — we do it all</li>
+      <li>Unlimited off-market leads across all U.S. zip codes</li>
+      <li>AI-powered, customized outreach written just for you</li>
+      <li>CRM-ready delivery with real-time status</li>
+      <li>Bookable leads, nurtured pipelines, actual deals</li>
     </ul>
   </section>
 
@@ -161,17 +178,17 @@
     <h2>Packages & Pricing</h2>
     <div class="plan">
       <h3>Starter - $500/month</h3>
-      <p>100 fresh leads, 3 AI-written follow-up emails</p>
+      <p>100 off-market leads + 3 AI-crafted outreach emails</p>
       <a href="https://buy.stripe.com/test_7sIcNp1hn8iS2pW9AA">Choose Starter</a>
     </div>
     <div class="plan">
       <h3>Growth - $1,200/month</h3>
-      <p>250 leads, email automation, CRM setup</p>
+      <p>250 leads + automation + CRM setup</p>
       <a href="https://buy.stripe.com/test_00g7uB7e59MC5sQ3cc">Choose Growth</a>
     </div>
     <div class="plan">
       <h3>Dominate - $2,000/month</h3>
-      <p>Everything + Google Ads + landing funnel</p>
+      <p>Everything plus Google Ads + funnel & retargeting</p>
       <a href="https://buy.stripe.com/test_dR6bKVeWffBq7YAcMN">Choose Dominate</a>
     </div>
   </section>
@@ -179,32 +196,32 @@
   <section id="how" class="how-it-works">
     <h2>How It Works</h2>
     <ol>
-      <li>Enter your target zip code</li>
-      <li>We find and qualify the leads</li>
-      <li>We write & send your outreach messages</li>
-      <li>You book meetings, close clients</li>
+      <li>Choose your target zip code and package</li>
+      <li>We identify, verify, and score leads using AI</li>
+      <li>We deliver outreach-ready lead sheets</li>
+      <li>You book appointments and close deals</li>
     </ol>
   </section>
 
   <section id="dashboard" class="dashboard">
-    <h2>Customer Dashboard</h2>
-    <p>This dashboard will soon allow you to track:</p>
+    <h2>Your Client Dashboard</h2>
+    <p>Coming soon: Log in to see...</p>
     <ul>
-      <li>Lead delivery status</li>
-      <li>Response metrics</li>
-      <li>Subscription activity</li>
-      <li>Downloadable reports</li>
+      <li>New lead batches</li>
+      <li>Outreach engagement data</li>
+      <li>Lead download links</li>
+      <li>Next steps, appointments & updates</li>
     </ul>
-    <p>Email <a href="mailto:jpinter@researchgenie.net">jpinter@researchgenie.net</a> for preview access.</p>
   </section>
 
   <section id="login" class="login">
-    <h2>Client Login (Coming Soon)</h2>
-    <p>A secure login portal will be available for clients to manage services and access leads. Stay tuned.</p>
+    <h2>Secure Login</h2>
+    <p>Access your portal: lead tracking, delivery stats, and subscription history.</p>
+    <p>Email <a href="mailto:jpinter@researchgenie.net">jpinter@researchgenie.net</a> to request access.</p>
   </section>
 
   <section class="form-section">
-    <h2>Schedule a Call or Submit a Custom Request</h2>
+    <h2>Request a Custom Package</h2>
     <form action="https://formspree.io/f/mayvlzpn" method="POST">
       <label>Full Name:</label>
       <input type="text" name="name" required />
@@ -212,26 +229,25 @@
       <label>Email Address:</label>
       <input type="email" name="email" required />
 
-      <label>Message or Questions:</label>
+      <label>What market or property types are you targeting?</label>
       <textarea name="message" rows="5" required></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Submit Request</button>
     </form>
   </section>
 
   <section id="contact" class="cta">
     <h2>Get 20 Free Sample Leads — No Credit Card Needed</h2>
-    <p>Email <a href="mailto:jpinter@researchgenie.net">jpinter@researchgenie.net</a> or call <a href="tel:9172278617">917-227-8617</a> to claim your free leads today.</p>
+    <p>Email <a href="mailto:jpinter@researchgenie.net">jpinter@researchgenie.net</a> or call <a href="tel:9172278617">917-227-8617</a></p>
   </section>
 
   <footer>
-    &copy; 2025 LeadIgnite AI. Powered by ResearchGenie.
+    &copy; 2025 LeadIgnite AI. All Rights Reserved. A ResearchGenie Brand.
   </footer>
 
   <script>
     const now = new Date();
-    const formatted = now.toLocaleString();
-    document.getElementById('datetime').textContent = 'Current Time: ' + formatted;
+    document.getElementById('datetime').textContent = 'Current Time: ' + now.toLocaleString();
   </script>
 </body>
 </html>
