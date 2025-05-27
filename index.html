@@ -1,92 +1,198 @@
-<section class="calendly-cta">
-  <h2>Book a Strategy Call with Our Deal Researchers</h2>
-  <p>Connect one-on-one with our team to review markets, custom zip codes, or bulk lead packages tailored to your brokerage needs.</p>
-  <iframe src="https://dealresearcher.com/schedule" width="100%" height="600" frameborder="0"></iframe>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Dashboard | Deal Researcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #003366;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #eaeaea;
+    }
+    th {
+      background-color: #f9fafb;
+      font-weight: 600;
+    }
+    .status-success {
+      color: green;
+      font-weight: 600;
+    }
+    .status-pending {
+      color: #f39c12;
+      font-weight: 600;
+    }
+    .cta {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .cta a {
+      background-color: #0070f3;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta a:hover {
+      background-color: #005bb5;
+    }
+    .metrics {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .metric-card {
+      flex: 1;
+      min-width: 220px;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background-color: #f9fafb;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .metric-card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .metric-card p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deal Researcher Client Dashboard</h1>
+    <p>Welcome back. Here’s your custom AI-powered performance overview.</p>
+  </header>
 
-<div class="chatbot">
-  <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-    "composerPlaceholder": "Ask us anything...",
-    "botId": "your-bot-id",
-    "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-    "messagingUrl": "https://messaging.botpress.cloud",
-    "showCloseButton": true,
-    "showLauncher": true,
-    "enableReset": true,
-    "showSessionBadge": false,
-    "autoStart": false
-  });
-</script>
-</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="book.html">Book a Call</a>
+    <a href="deals.html">Recent Deals</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="pricing.html">Plans</a>
+  </nav>
 
-<section class="deals">
-  <h2>Recent Wins from Our Clients</h2>
-  <ul>
-    <li>🏢 $1.2M 12-unit off-market building in Tampa — closed with 6.9% cap rate</li>
-    <li>🏘️ Charlotte investor closed 3 duplexes sourced through our platform</li>
-    <li>📞 Houston broker booked 5 client showings within 72 hours of onboarding</li>
-    <li>💼 $800K listing secured from AI-email follow-up sent through our tools</li>
-  </ul>
-</section>
-
-<section id="testimonials" class="testimonials">
-  <h2>What Our Clients Are Saying</h2>
-  <div class="testimonial-slider">
-    <div class="testimonial active">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client Photo">
-      <div>
-        <blockquote>“LeadIgnite helped me land 3 listings in my first month — with zero cold calling. Their leads are gold.”</blockquote>
-        <div class="stars">★★★★★</div>
-        <cite>— Sarah Klein, Dallas Realtor</cite>
+  <div class="container">
+    <div class="metrics">
+      <div class="metric-card">
+        <h3>Leads Delivered</h3>
+        <p>150</p>
+      </div>
+      <div class="metric-card">
+        <h3>Booked Calls</h3>
+        <p>12</p>
+      </div>
+      <div class="metric-card">
+        <h3>Email Open Rate</h3>
+        <p>42%</p>
+      </div>
+      <div class="metric-card">
+        <h3>Avg. Response Time</h3>
+        <p>6.4 hrs</p>
       </div>
     </div>
-    <div class="testimonial">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client Photo">
-      <div>
-        <blockquote>“I’ve worked with 4 lead gen services. This is the only one that delivered real ROI fast.”</blockquote>
-        <div class="stars">★★★★★</div>
-        <cite>— James Ortiz, Florida Commercial Agent</cite>
-      </div>
+
+    <div class="cta">
+      <a href="https://buy.stripe.com/test_eVa7sAd8ddYkgqIdQQ">Upgrade to Growth Plan - $1,200/month</a>
     </div>
-    <div class="testimonial">
-      <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client Photo">
-      <div>
-        <blockquote>“From zip code targeting to outreach emails, everything just works. My calendar is full.”</blockquote>
-        <div class="stars">★★★★★</div>
-        <cite>— Kyle Benson, Charlotte Investment Broker</cite>
-      </div>
+
+    <div class="section">
+      <h2>Lead Deliveries</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Zip Code</th>
+            <th>Leads Sent</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-05-25</td>
+            <td>33101</td>
+            <td>50</td>
+            <td class="status-success">Delivered</td>
+          </tr>
+          <tr>
+            <td>2025-05-22</td>
+            <td>77002</td>
+            <td>50</td>
+            <td class="status-success">Delivered</td>
+          </tr>
+          <tr>
+            <td>2025-05-19</td>
+            <td>90026</td>
+            <td>50</td>
+            <td class="status-pending">In Progress</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="testimonial">
-      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client Photo">
-      <div>
-        <blockquote>“Their AI outreach is scarily effective — my inbox has been blowing up.”</blockquote>
-        <div class="stars">★★★★★</div>
-        <cite>— Nina Patel, Houston Agent</cite>
-      </div>
+
+    <div class="section">
+      <h2>Current Subscription</h2>
+      <p>Plan: <strong>Growth</strong> | $1,200/month</p>
+      <p>Next Billing Date: <strong>2025-06-01</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>Need Help?</h2>
+      <p>Email us at <a href="mailto:support@dealresearcher.com">support@dealresearcher.com</a> or use the chatbot at bottom-right.</p>
     </div>
   </div>
-
-  <div class="client-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Keller_Williams_Realty_logo.svg/2560px-Keller_Williams_Realty_logo.svg.png" alt="KW">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/REMAX_logo.svg/2560px-REMAX_logo.svg.png" alt="RE/MAX">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Coldwell_Banker_Logo_2020.svg/2560px-Coldwell_Banker_Logo_2020.svg.png" alt="Coldwell Banker">
-  </div>
-
-  <div class="video-review">
-    <h3>Client Feedback on Their Closed Deals</h3>
-    <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Researcher-Driven Deal Testimonial" allowfullscreen></iframe>
-  </div>
-</section>
-
-<script>
-  const now = new Date();
-  const testimonials = document.querySelectorAll('.testimonial-slider .testimonial');
-  let current = 0;
-  setInterval(() => {
-    testimonials[current].classList.remove('active');
-    current = (current + 1) % testimonials.length;
-    testimonials[current].classList.add('active');
-  }, 5000);
-</script>
+</body>
+</html>
