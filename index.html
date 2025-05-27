@@ -1,131 +1,92 @@
-<style>
-    .testimonial-slider {
-      position: relative;
-      overflow: hidden;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .testimonial-slider .testimonial {
-      display: none;
-      flex-direction: row;
-      align-items: center;
-      gap: 20px;
-      text-align: left;
-      transition: opacity 0.6s ease;
-    }
-    .testimonial-slider .testimonial.active {
-      display: flex;
-    }
-    .deals {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 40px;
-      margin: 30px auto;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-    .deals ul {
-      max-width: 700px;
-      margin: auto;
-      text-align: left;
-    }
-    .calendly-cta {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .chatbot {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-  </style>
+<section class="calendly-cta">
+  <h2>Book a Strategy Call with Our Deal Researchers</h2>
+  <p>Connect one-on-one with our team to review markets, custom zip codes, or bulk lead packages tailored to your brokerage needs.</p>
+  <iframe src="https://calendly.com/yourusername/15min" width="100%" height="600" frameborder="0"></iframe>
+</section>
 
-  <section id="testimonials" class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-slider">
-      <div class="testimonial active">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client Photo">
-        <div>
-          <blockquote>“LeadIgnite helped me land 3 listings in my first month — with zero cold calling. Their leads are gold.”</blockquote>
-          <div class="stars">★★★★★</div>
-          <cite>— Sarah Klein, Dallas Realtor</cite>
-        </div>
-      </div>
-      <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client Photo">
-        <div>
-          <blockquote>“I’ve worked with 4 lead gen services. This is the only one that delivered real ROI fast.”</blockquote>
-          <div class="stars">★★★★★</div>
-          <cite>— James Ortiz, Florida Commercial Agent</cite>
-        </div>
-      </div>
-      <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client Photo">
-        <div>
-          <blockquote>“From zip code targeting to outreach emails, everything just works. My calendar is full.”</blockquote>
-          <div class="stars">★★★★★</div>
-          <cite>— Kyle Benson, Charlotte Investment Broker</cite>
-        </div>
-      </div>
-      <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client Photo">
-        <div>
-          <blockquote>“Their AI outreach is scarily effective — my inbox has been blowing up.”</blockquote>
-          <div class="stars">★★★★★</div>
-          <cite>— Nina Patel, Houston Agent</cite>
-        </div>
+<div class="chatbot">
+  <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+    "composerPlaceholder": "Ask us anything...",
+    "botId": "your-bot-id",
+    "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+    "messagingUrl": "https://messaging.botpress.cloud",
+    "showCloseButton": true,
+    "showLauncher": true,
+    "enableReset": true,
+    "showSessionBadge": false,
+    "autoStart": false
+  });
+</script>
+</div>
+
+<section class="deals">
+  <h2>Recent Wins from Our Clients</h2>
+  <ul>
+    <li>🏢 $1.2M 12-unit off-market building in Tampa — closed with 6.9% cap rate</li>
+    <li>🏘️ Charlotte investor closed 3 duplexes sourced through our platform</li>
+    <li>📞 Houston broker booked 5 client showings within 72 hours of onboarding</li>
+    <li>💼 $800K listing secured from AI-email follow-up sent through our tools</li>
+  </ul>
+</section>
+
+<section id="testimonials" class="testimonials">
+  <h2>What Our Clients Are Saying</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial active">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client Photo">
+      <div>
+        <blockquote>“LeadIgnite helped me land 3 listings in my first month — with zero cold calling. Their leads are gold.”</blockquote>
+        <div class="stars">★★★★★</div>
+        <cite>— Sarah Klein, Dallas Realtor</cite>
       </div>
     </div>
-
-    <div class="client-logos">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Keller_Williams_Realty_logo.svg/2560px-Keller_Williams_Realty_logo.svg.png" alt="KW">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/REMAX_logo.svg/2560px-REMAX_logo.svg.png" alt="RE/MAX">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Coldwell_Banker_Logo_2020.svg/2560px-Coldwell_Banker_Logo_2020.svg.png" alt="Coldwell Banker">
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client Photo">
+      <div>
+        <blockquote>“I’ve worked with 4 lead gen services. This is the only one that delivered real ROI fast.”</blockquote>
+        <div class="stars">★★★★★</div>
+        <cite>— James Ortiz, Florida Commercial Agent</cite>
+      </div>
     </div>
-
-    <div class="video-review">
-      <h3>Watch a Client Success Story</h3>
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Video Testimonial" allowfullscreen></iframe>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client Photo">
+      <div>
+        <blockquote>“From zip code targeting to outreach emails, everything just works. My calendar is full.”</blockquote>
+        <div class="stars">★★★★★</div>
+        <cite>— Kyle Benson, Charlotte Investment Broker</cite>
+      </div>
     </div>
-  </section>
-
-  <section class="deals">
-    <h2>Recent Deals Closed</h2>
-    <ul>
-      <li>🏢 $1.2M multifamily deal in Tampa — closed in 19 days</li>
-      <li>🏘️ 3 off-market duplexes sold in Charlotte to one investor</li>
-      <li>📞 5 appointment bookings within 72 hours of launch (Houston)</li>
-      <li>💼 $800K listing secured through auto outreach in Scottsdale</li>
-    </ul>
-  </section>
-
-  <section class="calendly-cta">
-    <h2>Book a Strategy Call</h2>
-    <iframe src="https://calendly.com/yourusername/15min" width="100%" height="600" frameborder="0"></iframe>
-  </section>
-
-  <div class="chatbot">
-    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-    <script>
-      window.botpressWebChat.init({
-        "composerPlaceholder": "Ask us anything...",
-        "botId": "your-bot-id",
-        "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-        "messagingUrl": "https://messaging.botpress.cloud"
-      });
-    </script>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client Photo">
+      <div>
+        <blockquote>“Their AI outreach is scarily effective — my inbox has been blowing up.”</blockquote>
+        <div class="stars">★★★★★</div>
+        <cite>— Nina Patel, Houston Agent</cite>
+      </div>
+    </div>
   </div>
 
-  <script>
-    const now = new Date();
-    document.getElementById('datetime').textContent = now.toLocaleString();
+  <div class="client-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Keller_Williams_Realty_logo.svg/2560px-Keller_Williams_Realty_logo.svg.png" alt="KW">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/REMAX_logo.svg/2560px-REMAX_logo.svg.png" alt="RE/MAX">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Coldwell_Banker_Logo_2020.svg/2560px-Coldwell_Banker_Logo_2020.svg.png" alt="Coldwell Banker">
+  </div>
 
-    const testimonials = document.querySelectorAll('.testimonial-slider .testimonial');
-    let current = 0;
-    setInterval(() => {
-      testimonials[current].classList.remove('active');
-      current = (current + 1) % testimonials.length;
-      testimonials[current].classList.add('active');
-    }, 5000);
-  </script>
+  <div class="video-review">
+    <h3>Client Feedback on Their Closed Deals</h3>
+    <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Researcher-Driven Deal Testimonial" allowfullscreen></iframe>
+  </div>
+</section>
+
+<script>
+  const now = new Date();
+  const testimonials = document.querySelectorAll('.testimonial-slider .testimonial');
+  let current = 0;
+  setInterval(() => {
+    testimonials[current].classList.remove('active');
+    current = (current + 1) % testimonials.length;
+    testimonials[current].classList.add('active');
+  }, 5000);
+</script>
